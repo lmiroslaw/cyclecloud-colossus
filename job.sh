@@ -1,5 +1,5 @@
 echo Hostfile:
-echo `cat $PBS_NODEFILE`
+echo `cat $SLURM_JOB_NODELIST`
 echo
 date
 sudo beeond start -n $(readlink -f $SLURM_JOB_NODELIST) -d /mnt/resource/beeond -c /beeond
