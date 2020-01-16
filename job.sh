@@ -1,4 +1,4 @@
-SBATCH --job-name=imb
+#SBATCH --job-name=imb
 #SBATCH --output=imb_hc.txt
 #SBATCH --account=tsp
 #SBATCH --nodes=2
